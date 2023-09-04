@@ -40,8 +40,6 @@ using std::find;
 int n;
 int arr[1'000'001]{};
 
-// A[1] != A[n]
-
 int main()
 {
 	std::ios_base::sync_with_stdio(false);
@@ -114,12 +112,9 @@ int main()
 	// stack
 	long long ans_stk = 0;
 	stack<int> stk;
-	int mx = 0;
 
 	for (int i = 1; i <= n; ++i)
 	{
-		mx = max(mx, arr[i]);
-
 		if (stk.empty())
 			stk.push(arr[i]);
 		else
@@ -127,19 +122,28 @@ int main()
 			if (stk.top() < arr[i])
 			{
 				ans_stk += arr[i] - stk.top();
-				stk.pop();
+				while (!stk.empty() && stk.top() < arr[i])
+				{
+					stk.pop();
+				}
 				stk.push(arr[i]);
 			}
 			else if (stk.top() > arr[i])
-			{
-				stk.pop();
 				stk.push(arr[i]);
-			}
 		}
 	}
-	if(stk.size() == 1)
-		ans_stk += mx - stk.top();
 
+	if (!stk.empty())
+	{
+		int mn = stk.top();
+		int mx;
+		while (!stk.empty())
+		{
+			mx = stk.top();
+			stk.pop();
+		}
+		ans_stk += mx - mn;
+	}
 
 	cout << ans_stk;
 
