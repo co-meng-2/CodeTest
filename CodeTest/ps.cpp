@@ -37,110 +37,111 @@ using std::memcpy;
 using std::stof;
 using std::find;
 
-using ll = long long;
+int n;
+int arr[1'000'001]{};
 
-enum TYPE
-{
-	CONSO = 1,
-	VOWEL = 2,
-	BOTH = 3,
-	FILL = 4,
-};
-
-int Check(int i, vector<int>& vec)
-{
-	int result = BOTH;
-	if(i -1 >= 0 && i +1 < vec.size())
-	{
-		if (vec[i - 1] == CONSO && vec[i + 1] == CONSO) result = result & ~CONSO;
-		else if (vec[i - 1] == VOWEL && vec[i + 1] == VOWEL) result = result & ~VOWEL;
-	}
-
-	if(i -2 >= 0)
-	{
-		if (vec[i - 2] == CONSO && vec[i - 1] == CONSO) result = result & ~CONSO;
-		else if (vec[i - 2] == VOWEL && vec[i - 1] == VOWEL) result = result & ~VOWEL;
-	}
-
-	if(i + 2 < vec.size())
-	{
-		if (vec[i + 2] == CONSO && vec[i + 1] == CONSO) result = result & ~CONSO;
-		else if (vec[i + 2] == VOWEL && vec[i + 1] == VOWEL) result = result & ~VOWEL;
-	}
-
-	return result;
-}
-
-void dfs(int _iDepth, int _iMaxDepth, bool _hasL, vector<int>& _vec, ll _acc, ll& _total)
-{
-	if (_iMaxDepth == _iDepth)
-	{
-		if (_hasL == false) return;
-		_total += _acc;
-		return;
-	}
-
-	int i = 0;
-	while (_vec[i] != FILL) ++i;
-
-	int check = Check(i, _vec);
-
-	if (check == VOWEL)
-	{
-		_vec[i] = VOWEL;
-		dfs(_iDepth + 1, _iMaxDepth, _hasL, _vec, _acc * 5, _total);
-	}
-	else if (check == CONSO)
-	{
-		_vec[i] = CONSO;
-		dfs(_iDepth + 1, _iMaxDepth, _hasL, _vec, _acc * 20, _total);
-		dfs(_iDepth + 1, _iMaxDepth, true, _vec, _acc, _total);
-		_vec[i] = FILL;
-	}
-	else if (check == BOTH)
-	{
-		_vec[i] = VOWEL;
-		dfs(_iDepth + 1, _iMaxDepth, _hasL, _vec, _acc * 5, _total);
-		_vec[i] = CONSO;
-		dfs(_iDepth + 1, _iMaxDepth, _hasL, _vec, _acc * 20, _total);
-		dfs(_iDepth + 1, _iMaxDepth, true, _vec, _acc, _total);
-		_vec[i] = FILL;
-	}
-}
+// A[1] != A[n]
 
 int main()
 {
 	std::ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 
-	bool hasL = false;
+	cin >> n;
+	for (int i = 1; i <= n; ++i)
+		cin >> arr[i];
+	arr[0] = -1;
 
-	string str;
-	cin >> str;
+	//// greedy 
+	//vector<int> vec;
+	//for (int i = 1; i <= n; ++i)
+	//{
+	//	if (arr[i] != arr[i - 1])
+	//		vec.push_back(arr[i]);
+	//}
+	//long long ans = 0;
+	//if(vec.size() == 2)
+	//	ans = abs(vec[0] - vec[1]);
+	//else
+	//{
+	//	while (true)
+	//	{
+	//		int mn = INT_MAX;
+	//		int mnIdx = -1;
+	//		for (int i = 0; i < vec.size(); ++i)
+	//		{
+	//			if (mn > vec[i])
+	//			{
+	//				mn = vec[i];
+	//				mnIdx = i;
+	//			}
+	//		}
 
-	vector<int> vec;
-	int iMaxDepth = 0;
-	for(auto it : str)
+	//		// min으로부터 왼쪽 오른쪽 차이
+	//		int rightMin = INT_MAX; 
+	//		int leftMin = INT_MAX;
+
+	//		if (mnIdx + 1 < vec.size())
+	//			rightMin = vec[mnIdx + 1] - vec[mnIdx];
+
+	//		if (mnIdx - 1 >= 0)
+	//			leftMin = vec[mnIdx - 1] - vec[mnIdx];
+
+	//		if (leftMin > rightMin)
+	//		{
+	//			ans += rightMin;
+	//			vec.erase(vec.begin() + mnIdx);
+	//		}
+	//		else if (leftMin < rightMin)
+	//		{
+	//			ans += leftMin;
+	//			vec.erase(vec.begin() + mnIdx);
+	//		}
+	//		else 
+	//		{
+	//			if (vec.size() == 1)
+	//				break;
+	//			else
+	//			{
+	//				ans += leftMin;
+	//				vec.erase(vec.begin() + mnIdx, vec.begin() + mnIdx + 2);
+	//			}
+	//		}
+	//	}
+	//}
+	// cout << ans << "\n";
+
+	// stack
+	long long ans_stk = 0;
+	stack<int> stk;
+	int mx = 0;
+
+	for (int i = 1; i <= n; ++i)
 	{
-		if (it == 'I' || it == 'E' || it == 'O' || it == 'U' || it == 'A')
-			vec.push_back(VOWEL);
-		else if (it == '_')
-		{
-			vec.push_back(FILL);
-			iMaxDepth++;
-		}
+		mx = max(mx, arr[i]);
+
+		if (stk.empty())
+			stk.push(arr[i]);
 		else
 		{
-			if (it == 'L')
-				hasL = true;
-			vec.push_back(CONSO);
+			if (stk.top() < arr[i])
+			{
+				ans_stk += arr[i] - stk.top();
+				stk.pop();
+				stk.push(arr[i]);
+			}
+			else if (stk.top() > arr[i])
+			{
+				stk.pop();
+				stk.push(arr[i]);
+			}
 		}
 	}
+	if(stk.size() == 1)
+		ans_stk += mx - stk.top();
 
-	ll total = 0;
-	dfs(0, iMaxDepth, hasL, vec, 1, total);
 
-	cout << total;
+	cout << ans_stk;
 
     return 0;
 }
