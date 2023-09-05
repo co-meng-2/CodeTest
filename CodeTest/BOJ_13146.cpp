@@ -11,7 +11,6 @@
 #include <list>
 #include <climits>
 
-struct tEdge;
 using std::deque;
 using std::queue;
 using std::vector;
@@ -133,17 +132,14 @@ int main()
 		}
 	}
 
-	if (!stk.empty())
+	int mn = stk.top();
+	int mx;
+	while (!stk.empty())
 	{
-		int mn = stk.top();
-		int mx;
-		while (!stk.empty())
-		{
-			mx = stk.top();
-			stk.pop();
-		}
-		ans_stk += mx - mn;
+		mx = stk.top();
+		stk.pop();
 	}
+	ans_stk += mx - mn;
 
 	cout << ans_stk;
 
