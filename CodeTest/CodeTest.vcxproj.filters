@@ -14,6 +14,9 @@
     <Filter Include="stack">
       <UniqueIdentifier>{291e8829-bac4-4ae1-97ac-d06e4f5f37dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dp">
+      <UniqueIdentifier>{1751bcd7-30b3-4474-9509-f63e03255bad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -24,6 +27,9 @@
     </ClCompile>
     <ClCompile Include="BOJ_13146.cpp">
       <Filter>stack</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_2482.cpp">
+      <Filter>dp</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
