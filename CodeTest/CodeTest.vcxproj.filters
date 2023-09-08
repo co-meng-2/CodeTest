@@ -17,6 +17,9 @@
     <Filter Include="dp">
       <UniqueIdentifier>{1751bcd7-30b3-4474-9509-f63e03255bad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="daikstra">
+      <UniqueIdentifier>{03f0713b-aeac-4635-87b9-006b4aea986b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -30,6 +33,9 @@
     </ClCompile>
     <ClCompile Include="BOJ_2482.cpp">
       <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_1238.cpp">
+      <Filter>daikstra</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
