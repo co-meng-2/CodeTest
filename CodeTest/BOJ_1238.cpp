@@ -7,15 +7,10 @@ using std::cout;
 #include <algorithm>
 using P = std::pair<int, int>;
 
-#include <climits>
-
-#include <vector>
+#include <vector> 
 using std::vector;
 
 #include <queue>
-
-#include <cstring>
-
 
 // N개의 마을에 각각 한 명의 사람이 산다.
 // X번 마을에 파티가 개최된다.
@@ -28,8 +23,8 @@ using std::vector;
 
 // 다익스트라
 // K -> X로 가는 경우는 VElogV
-// X -> K로 가는 경오도 VElogV
-// 따라서 2개를 구해서 합 중 최대로 구하면 된다.
+// X -> K로 가는 경우는 ElogV
+// 따라서 2개를 구해서 합 중 최대를 구하면 된다.
 
 int N; // 1 - 1000
 int M; // 1 - 10000
@@ -38,8 +33,8 @@ int X;
 const int INF = 100000000;
 
 int dp[1001][1001]{};
-int daikToX[1001]{};
-int daikFromX[1001]{};
+int dijkToX[1001]{};	// K(Idx)->X로 가는 최단거리 배열 
+int dijkFromX[1001]{};	// X->K(Idx)로 가는 최단거리 배열
 
 int main()
 {
@@ -55,6 +50,7 @@ int main()
 		adjList[s].push_back({ w,d });
 	}
 
+	// dijkstra
 	for(int i = 1; i <= N; ++i)
 	{
 		std::priority_queue<P, vector<P>, std::greater<P>> PQ;
@@ -75,20 +71,22 @@ int main()
 			for (auto it : adjList[top.second])
 			{
 				table[it.second] = std::min(table[it.second], table[top.second] + it.first);
-				PQ.push(it);
+				PQ.push({table[it.second] ,it.second});
 			}
 		}
+		// X까지의 최단 거리 기록
 		if(table[X] != INF)
-			daikToX[i] = table[X];
+			dijkToX[i] = table[X];
+		// X부터 다른 정점까지 최단 거리 기록
 		if (i == X)
 			for(int j = 1; j <=N; ++j)
 				if (table[j] != INF)
-					daikFromX[j] = table[j];
+					dijkFromX[j] = table[j];
 	}
 
 	int Max = -1;
 	for (int i = 1; i <= N; ++i)
-		Max = std::max(Max, daikToX[i] + daikFromX[i]);
+		Max = std::max(Max, dijkToX[i] + dijkFromX[i]);
 
 	cout << Max;
 
