@@ -20,6 +20,9 @@
     <Filter Include="dijkstra">
       <UniqueIdentifier>{03f0713b-aeac-4635-87b9-006b4aea986b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dfs">
+      <UniqueIdentifier>{5ae2f4c8-aae3-4fe4-b989-c46c2539e555}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -37,6 +40,9 @@
     <ClCompile Include="BOJ_1238.cpp">
       <Filter>dijkstra</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_15683.cpp" />
+    <ClCompile Include="BOJ_15683.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_1865.cpp" />
   </ItemGroup>
 </Project>

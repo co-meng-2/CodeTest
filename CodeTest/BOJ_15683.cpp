@@ -22,19 +22,6 @@ using std::vector;
 int col, row; // 1-8
 int board[10][10]{};
 
-enum TYPE
-{
-	NONE = 0,
-	C1 = 1, // 한 방향
-	C2 = 5, // 양 방향
-	C3 = 3, // ㄴ자 방향
-	C4 = 7, // 세 방향
-	C5 = 15, // 네 방향
-	WALL = 16,
-	DETECT = 17,
-};
-int arr[7] = { NONE, C1, C2, C3, C4, C5, WALL };
-
 enum DIR
 {
 	X = 0,
@@ -43,6 +30,21 @@ enum DIR
 	DOWN = 4,
 	LEFT = 8
 };
+
+enum TYPE
+{
+	NONE = 0,
+	C1 = UP, // 한 방향
+	C2 = UP | DOWN, // 양 방향
+	C3 = UP | RIGHT, // ㄴ자 방향
+	C4 = UP | RIGHT | DOWN, // 세 방향
+	C5 = UP | RIGHT | DOWN | LEFT , // 네 방향
+	WALL = 16,
+	DETECT = 17,
+};
+int arr[7] = { NONE, C1, C2, C3, C4, C5, WALL };
+
+
 
 struct CCTV
 {
