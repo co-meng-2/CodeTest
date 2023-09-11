@@ -23,6 +23,9 @@
     <Filter Include="dfs">
       <UniqueIdentifier>{5ae2f4c8-aae3-4fe4-b989-c46c2539e555}</UniqueIdentifier>
     </Filter>
+    <Filter Include="floyd">
+      <UniqueIdentifier>{bebac84d-00cd-4d82-b5bd-8d1e2c67166d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -43,6 +46,9 @@
     <ClCompile Include="BOJ_15683.cpp">
       <Filter>dfs</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_1865.cpp" />
+    <ClCompile Include="BOJ_1865.cpp">
+      <Filter>floyd</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_17609.cpp" />
   </ItemGroup>
 </Project>
