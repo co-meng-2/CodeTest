@@ -1,3 +1,4 @@
-﻿  BOJ_17609.cpp
-D:\C++\CodeTest\CodeTest\BOJ_17609.cpp(50,37): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  PGMS_고고학_최고의_발견.cpp
+D:\C++\CodeTest\CodeTest\PGMS_고고학_최고의_발견.cpp(98,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\C++\CodeTest\CodeTest\PGMS_고고학_최고의_발견.cpp(110,30): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   CodeTest.vcxproj -> D:\C++\CodeTest\x64\Debug\CodeTest.exe

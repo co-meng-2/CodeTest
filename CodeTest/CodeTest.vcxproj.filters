@@ -49,6 +49,23 @@
     <ClCompile Include="BOJ_1865.cpp">
       <Filter>floyd</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_17609.cpp" />
+    <ClCompile Include="BOJ_17609.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_표현가능한이진트리.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_2차원_동전_뒤집기.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_등대.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_숫자타자대회.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_고고학_최고의_발견.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
