@@ -26,6 +26,12 @@
     <Filter Include="floyd">
       <UniqueIdentifier>{bebac84d-00cd-4d82-b5bd-8d1e2c67166d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dp+dfs_bfs">
+      <UniqueIdentifier>{3ff166a3-3ab3-415f-915c-9b6b49e4f1ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bfs">
+      <UniqueIdentifier>{006178df-12c6-43ff-ad24-a5cfdfb0520e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -61,11 +67,23 @@
     <ClCompile Include="PGMS_등대.cpp">
       <Filter>dfs</Filter>
     </ClCompile>
-    <ClCompile Include="PGMS_숫자타자대회.cpp">
-      <Filter>dfs</Filter>
-    </ClCompile>
     <ClCompile Include="PGMS_고고학_최고의_발견.cpp">
       <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_숫자타자대회.cpp">
+      <Filter>dp+dfs_bfs</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_등산코스정하기.cpp">
+      <Filter>dp+dfs_bfs</Filter>
+    </ClCompile>
+    <ClCompile Include="NC3.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_12094.cpp">
+      <Filter>greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_아이템줍기.cpp">
+      <Filter>bfs</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
