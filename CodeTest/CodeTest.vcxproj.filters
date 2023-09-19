@@ -32,6 +32,9 @@
     <Filter Include="bfs">
       <UniqueIdentifier>{006178df-12c6-43ff-ad24-a5cfdfb0520e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="queue">
+      <UniqueIdentifier>{559c766e-a201-4ed1-b97e-5f6402a409b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -84,6 +87,12 @@
     </ClCompile>
     <ClCompile Include="PGMS_아이템줍기.cpp">
       <Filter>bfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_화장실의_규칙.cpp">
+      <Filter>queue</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_리틀_프렌즈_사천성.cpp">
+      <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
