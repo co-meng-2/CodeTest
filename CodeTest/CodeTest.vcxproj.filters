@@ -92,7 +92,11 @@
       <Filter>queue</Filter>
     </ClCompile>
     <ClCompile Include="PGMS_리틀_프렌즈_사천성.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>bfs</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_LCS2.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_GPS.cpp" />
   </ItemGroup>
 </Project>
