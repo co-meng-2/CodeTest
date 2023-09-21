@@ -35,6 +35,12 @@
     <Filter Include="queue">
       <UniqueIdentifier>{559c766e-a201-4ed1-b97e-5f6402a409b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="prim">
+      <UniqueIdentifier>{67a83527-546e-4bf6-82e7-70b51838a70f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="union_find">
+      <UniqueIdentifier>{49a63be1-848f-4aea-9ce9-94622d242cb1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -97,6 +103,14 @@
     <ClCompile Include="BOJ_LCS2.cpp">
       <Filter>dp</Filter>
     </ClCompile>
-    <ClCompile Include="PGMS_GPS.cpp" />
+    <ClCompile Include="PGMS_GPS.cpp">
+      <Filter>prim</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_인구이동.cpp">
+      <Filter>union_find</Filter>
+    </ClCompile>
+    <ClCompile Include="PGMS_억억단을외우자.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
