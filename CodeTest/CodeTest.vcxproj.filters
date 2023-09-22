@@ -112,5 +112,8 @@
     <ClCompile Include="PGMS_억억단을외우자.cpp">
       <Filter>dp</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_도시건설.cpp">
+      <Filter>curscal</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

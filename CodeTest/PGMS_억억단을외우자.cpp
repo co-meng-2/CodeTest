@@ -33,7 +33,7 @@ vector<int> solution(int e, vector<int> starts) {
         for (int mul = 5'000'000 / num; mul >= 1; mul--)
             dp[num * mul]++;
 
-    // 최댓값을 가진 숫자가 뭔지
+    // dp[k]-> e~e부터 생각하며, k~e부터 최댓값을 가진 숫자가 뭔지
     int dp2[5'000'001]{};
     dp2[e] = e;
     for (int i = e - 1; i >= 1; --i)
@@ -44,3 +44,8 @@ vector<int> solution(int e, vector<int> starts) {
 
     return answer;
 }
+
+// U : 12min
+// T : 50min
+// C : lh
+// Total : 2h2min
