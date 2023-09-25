@@ -121,5 +121,11 @@
     <ClCompile Include="BOJ_공유기설치.cpp">
       <Filter>binary_search</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_숨바꼭질2.cpp">
+      <Filter>bfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_성싶당.cpp">
+      <Filter>binary_search</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
