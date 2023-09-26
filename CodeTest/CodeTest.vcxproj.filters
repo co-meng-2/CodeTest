@@ -44,6 +44,9 @@
     <Filter Include="binary_search">
       <UniqueIdentifier>{c27a4e0a-deb9-47df-9bc4-cdc96359269c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="bruteforce">
+      <UniqueIdentifier>{ff584983-603e-4bfe-af03-8db2b9a04405}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -126,6 +129,9 @@
     </ClCompile>
     <ClCompile Include="BOJ_성싶당.cpp">
       <Filter>binary_search</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_고층빌딩.cpp">
+      <Filter>bruteforce</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
