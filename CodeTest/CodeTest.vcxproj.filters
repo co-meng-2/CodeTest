@@ -133,5 +133,8 @@
     <ClCompile Include="BOJ_고층빌딩.cpp">
       <Filter>bruteforce</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_역사.cpp">
+      <Filter>floyd</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
