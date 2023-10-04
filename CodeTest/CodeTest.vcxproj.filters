@@ -136,5 +136,8 @@
     <ClCompile Include="BOJ_역사.cpp">
       <Filter>floyd</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_월드컵.cpp">
+      <Filter>dp+dfs_bfs</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

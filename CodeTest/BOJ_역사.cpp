@@ -145,3 +145,7 @@ int main()
 
 	return 0;
 }
+
+// U : 3min
+// T : 6min
+// C : 1h15min
