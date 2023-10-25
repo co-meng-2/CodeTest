@@ -47,6 +47,9 @@
     <Filter Include="bruteforce">
       <UniqueIdentifier>{ff584983-603e-4bfe-af03-8db2b9a04405}</UniqueIdentifier>
     </Filter>
+    <Filter Include="implementation">
+      <UniqueIdentifier>{5895b7f6-437e-4385-b046-6826e83bcebc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
@@ -139,35 +142,38 @@
     <ClCompile Include="BOJ_월드컵.cpp">
       <Filter>dp+dfs_bfs</Filter>
     </ClCompile>
-    <ClCompile Include="HR_number_of_ways.cpp">
-      <Filter>리소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_집으로.cpp">
-      <Filter>리소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_게임개발.cpp">
-      <Filter>리소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Test.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="HR_JourneyToTheMoon.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="HR_ShortestReach2.cpp">
-      <Filter>리소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="HR_FrogInMaze.cpp">
-      <Filter>리소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_골목대장호석_효율성2.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Nectorial.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_ACM크래프트.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>dp+dfs_bfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_골목대장호석_효율성2.cpp">
+      <Filter>dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="HR_ShortestReach2.cpp">
+      <Filter>dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_게임개발.cpp">
+      <Filter>dp+dfs_bfs</Filter>
+    </ClCompile>
+    <ClCompile Include="HR_number_of_ways.cpp">
+      <Filter>bruteforce</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_집으로.cpp">
+      <Filter>greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_책페이지.cpp">
+      <Filter>implementation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
