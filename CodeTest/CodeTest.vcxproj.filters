@@ -175,5 +175,8 @@
     <ClCompile Include="BOJ_책페이지.cpp">
       <Filter>implementation</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_나만안되는연애.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
