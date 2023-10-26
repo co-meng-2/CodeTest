@@ -176,6 +176,9 @@
       <Filter>implementation</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_나만안되는연애.cpp">
+      <Filter>curscal</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_원판돌리기.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

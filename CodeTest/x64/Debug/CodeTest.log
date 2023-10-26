@@ -1,2 +1,4 @@
-﻿  BOJ_나만안되는연애.cpp
+﻿  BOJ_원판돌리기.cpp
+D:\C++\CodeTest\CodeTest\BOJ_원판돌리기.cpp(25,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\C++\CodeTest\CodeTest\BOJ_원판돌리기.cpp(26,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   CodeTest.vcxproj -> D:\C++\CodeTest\x64\Debug\CodeTest.exe
