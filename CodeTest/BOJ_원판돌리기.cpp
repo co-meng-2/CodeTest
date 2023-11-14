@@ -138,7 +138,7 @@ void Rotate(tRotate rot, vector<vector<int>>& circles, vector<vector<bool>>& vis
 	if (totalFind == false)
 	{
 		int sum = 0;
-		int cnt = 0;
+		int cnt = 0; 
 		for (int i = 1; i <= N; ++i)
 		{
 			for (int j = 0; j < M; ++j)
