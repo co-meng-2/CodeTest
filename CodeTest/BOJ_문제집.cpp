@@ -31,11 +31,6 @@ struct tInfo
 	vector<int> parents;
 	vector<int> childs;
 	bool checked = false;
-
-	bool operator>(const tInfo& _rhs) const
-	{
-		return cur > _rhs.cur;
-	}
 };
 
 int main()

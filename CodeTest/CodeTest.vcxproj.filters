@@ -202,10 +202,13 @@
     <ClCompile Include="BOJ_주사위윷놀이.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_게임.cpp">
-      <Filter>리소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_문제집.cpp">
+      <Filter>queue</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_게임.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_동전문제.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
