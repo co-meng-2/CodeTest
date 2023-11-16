@@ -209,6 +209,9 @@
       <Filter>dfs</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_동전문제.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_공항.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
