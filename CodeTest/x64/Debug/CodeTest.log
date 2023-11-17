@@ -1,3 +1,2 @@
-﻿  BOJ_공항.cpp
-D:\C++\CodeTest\CodeTest\BOJ_공항.cpp(46): warning C4715: 'FindNextGate': 모든 제어 경로에서 값을 반환하지는 않습니다.
+﻿  BOJ_저울.cpp
   CodeTest.vcxproj -> D:\C++\CodeTest\x64\Debug\CodeTest.exe

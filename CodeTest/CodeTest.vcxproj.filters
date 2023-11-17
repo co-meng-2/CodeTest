@@ -212,6 +212,9 @@
       <Filter>dp</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_공항.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_저울.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
