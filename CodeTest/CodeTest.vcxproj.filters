@@ -217,5 +217,20 @@
     <ClCompile Include="BOJ_저울.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_금고테스트.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_컬러볼.cpp">
+      <Filter>implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_사전.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_나누기.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_놀이공원.cpp">
+      <Filter>binary_search</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
