@@ -232,5 +232,11 @@
     <ClCompile Include="BOJ_놀이공원.cpp">
       <Filter>binary_search</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_컵라면.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_철로.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
