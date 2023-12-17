@@ -10,7 +10,6 @@ using std::vector;
 #include <algorithm>
 
 #include <queue>
-// 
 
 struct tLine
 {
@@ -76,5 +75,5 @@ int main()
 // S : 12:26
 // U : 12:27
 // T : 12:40
-// C :
-// Total :
+// C : 3:15
+// Total : 2h
