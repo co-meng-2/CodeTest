@@ -22,14 +22,12 @@ int dy[4] = {1,-1,0,0};
 
 int dfs(tPos cur, vector<vector<int>>& board, vector<vector<int>>& dp, int ysize, int xsize)
 {
-	if (dp[cur.y][cur.x] > 0)
+	if (dp[cur.y][cur.x] >= 0)
 		return dp[cur.y][cur.x];
-	else if (dp[cur.y][cur.x] == -1)
-		return 0;
 
+	dp[cur.y][cur.x] = 0;
 	int cv = board[cur.y][cur.x];
 
-	bool hasPath = false;
 	for(int i = 0; i < 4; ++i)
 	{
 		tPos nxt = cur;
@@ -39,18 +37,11 @@ int dfs(tPos cur, vector<vector<int>>& board, vector<vector<int>>& dp, int ysize
 		
 		if(cv > nv)
 		{
-			hasPath = true;
 			if (nxt.y == ysize && nxt.x == xsize)
 				dp[cur.y][cur.x]++;
 			else
 				dp[cur.y][cur.x] += dfs(nxt, board, dp, ysize, xsize);
 		}
-	}
-
-	if(hasPath == false)
-	{
-		dp[cur.y][cur.x] = -1;
-		return 0;
 	}
 
 	return dp[cur.y][cur.x];
@@ -69,7 +60,8 @@ int main()
 		for (int j = 1; j <= x; ++j)
 			cin >> board[i][j];
 
-	vector<vector<int>> dp(y + 2, vector<int>(x + 2, 0));
+	// 처음에 0으로 지정하면 안됨.갱신 안되었다는 의미로 -1로 지정. 처음 방문할 때 0으로 초기화.
+	vector<vector<int>> dp(y + 2, vector<int>(x + 2, -1));
 	tPos cur{ 1,1 };
 	cout << dfs(cur, board, dp, y, x);
 
@@ -79,6 +71,6 @@ int main()
 
 // S : 6:00
 // U : 6:02
-// T : 6:31
-// C :
+// T : 6:31 - 1h +
+// C : 8:00
 // Total :
