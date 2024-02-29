@@ -5,9 +5,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="curscal">
-      <UniqueIdentifier>{ffb99a40-57f6-4705-b1a0-3a95b1e7d9ed}</UniqueIdentifier>
-    </Filter>
     <Filter Include="greedy">
       <UniqueIdentifier>{2acff0b8-6357-4065-9546-63447e35b0ff}</UniqueIdentifier>
     </Filter>
@@ -50,10 +47,16 @@
     <Filter Include="implementation">
       <UniqueIdentifier>{5895b7f6-437e-4385-b046-6826e83bcebc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cruscal">
+      <UniqueIdentifier>{ffb99a40-57f6-4705-b1a0-3a95b1e7d9ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="segment_tree">
+      <UniqueIdentifier>{8aba91d5-c6eb-48fe-8c52-aeec9869269b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BOJ_1647.cpp">
-      <Filter>curscal</Filter>
+      <Filter>cruscal</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_1263.cpp">
       <Filter>greedy</Filter>
@@ -122,7 +125,7 @@
       <Filter>dp</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_도시건설.cpp">
-      <Filter>curscal</Filter>
+      <Filter>cruscal</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_공유기설치.cpp">
       <Filter>binary_search</Filter>
@@ -176,7 +179,7 @@
       <Filter>implementation</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_나만안되는연애.cpp">
-      <Filter>curscal</Filter>
+      <Filter>cruscal</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_원판돌리기.cpp">
       <Filter>리소스 파일</Filter>
@@ -239,6 +242,105 @@
       <Filter>리소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_전기가부족해.cpp">
+      <Filter>cruscal</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_멀티탭스케줄링.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_계단수.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_달이_차오른다_가자.cpp">
+      <Filter>bfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_커피숍2.cpp">
+      <Filter>segment_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_그림교환.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_노드사이의거리.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_최단경로.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_플로이드.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_집합의표현.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_네트워크연결.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_동전1.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_공유기설치_re.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_GCD&amp;RightNumber.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_감시.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_회문.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_수들의합2.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice_Trie.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_전화번호_목록.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SAND_BOX.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Practiece_KMP.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_Cubeditor.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_해킹.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_가장긴증가하는부분수열2.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_아기상어.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_트리의지름.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_역사_second.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_녹색옷입은애가젤다지.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_행성터널.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_학교탐방하기.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_게임개발_second.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_특정한_최단경로.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_색종이_붙이기.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_내리막_길.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
