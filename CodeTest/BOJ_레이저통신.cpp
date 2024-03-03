@@ -11,7 +11,7 @@ using std::vector;
 
 #include <queue>
 
-// bfs memo
+// bfs dp memo
 // memo[x][y]는 위치까지의 필요한 최소 거울의 갯수
 
 using pii = std::pair<int, int>;
@@ -56,8 +56,11 @@ int main()
 				SD.push_back({ i, j });
 		}
 
+	
+
 	const int INF = 1'000'000'000;
 
+	// memo[y][x][dir]
 	vector<vector<vector<pii>>> memo;
 	memo.resize(y + 2);
 	for(auto& it : memo)
@@ -94,9 +97,7 @@ int main()
 			int nx = cx + dirs[dir].second;
 			
 			if (board[ny][nx] == '*') continue;
-			if (memo[ny][nx][dir].first < nMemo) continue;
-			if (memo[ny][nx][dir].first == nMemo && memo[ny][nx][dir].second == true) continue;
-			memo[ny][nx][dir].second = true;
+			if (memo[ny][nx][dir].first <= nMemo) continue;
 			memo[ny][nx][dir].first = nMemo;
 			q.push({ ny, nx, dir});
 		}
