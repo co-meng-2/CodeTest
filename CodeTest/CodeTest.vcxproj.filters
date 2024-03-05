@@ -346,7 +346,13 @@
     <ClCompile Include="BOJ_레이저통신.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_출근_기록.cpp">
+    <ClCompile Include="BOJ_출근_기록_실패.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_피자판매.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_서강그라운드.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

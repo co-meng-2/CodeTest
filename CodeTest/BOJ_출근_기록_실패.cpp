@@ -15,7 +15,7 @@ using std::string;
 // dfs backtracking?
 // greedy
 // B, C가 가장 앞인 경우가 이상적
-// 우선 순위 C-> B -> A
+// 우선 순위 C -> B -> A
 // BBCBACB때문에 안됨.
 // BCBA"BCB
 // 균등하게 배치한다?
@@ -61,12 +61,16 @@ void dfs(int maxDepth, int depth, vector<int>& cnt, string& cur, string& mapping
 	}
 }
 
-int check(string& str, vector<int>& cnt, string& order)
+int check(string& str, vector<int>& cnt, string& order, int length)
 {
+	if (cnt[1] > 0 && cnt[1] > (length - str.length()) / 2 && str.back() != 'B')
+		return 1;
+
 	for(int i = 2; i >=0; --i)
 	{
 		if (cnt[i] == 0) continue;
 		bool bPossible = true;
+
 		for(int j = 0; j < i; ++j)
 		{
 			int prevIndex = (int)str.length() - 1 - j;
@@ -111,7 +115,7 @@ void dfs(int a, int b, int c, int pp, int p)
 		dfs(a , b+1, c, p, 1);
 		cur.pop_back();
 	}
-	if (c < cnt[2] && pp != 2 && p != 1)
+	if (c < cnt[2] && pp != 2 && p != 2)
 	{
 		cur.push_back('C');
 		dfs(a, b, c+1, p, 2);
@@ -137,16 +141,17 @@ int main()
 			cnt[2]++;
 	}
 
-	dfs(0, 0, 0, 0, 0);
+	//// dp dfs
+	//dfs(0, 0, 0, 0, 0);
 
-	if (ans.empty())
-		cout << -1;
-	else
-		cout << ans;
+	//if (ans.empty())
+	//	cout << -1;
+	//else
+	//	cout << ans;
 
 
 	// greedy
-	/*string order = "ABC";
+	string order = "ABC";
 	string ans = "";
 
 	for (int i = 2; i >= 0; i--)
@@ -159,7 +164,7 @@ int main()
 			tmpCnt[i]--;
 			while (tmpAns.size() < str.size())
 			{
-				int possibleCharIdx = check(tmpAns, tmpCnt, order);
+				int possibleCharIdx = check(tmpAns, tmpCnt, order, str.length());
 				if (possibleCharIdx == -1) break;
 				tmpAns.push_back(order[possibleCharIdx]);
 				tmpCnt[possibleCharIdx]--;
@@ -175,7 +180,7 @@ int main()
 	if (ans.size() != str.size())
 		cout << -1;
 	else
-		cout << ans;*/
+		cout << ans;
 
 
 	// dfs backtracking
