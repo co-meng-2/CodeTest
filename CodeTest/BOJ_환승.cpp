@@ -24,7 +24,7 @@ int main()
 	cin >> v >> cnt >> hyper;
 
 	vector<vector<int>> vh(v + 1);
-	vector<vector<int>> hv(v + 1);
+	vector<vector<int>> hv(hyper + 1);
 	for (int i = 1; i <= hyper; ++i)
 	{
 		for (int j = 0; j < cnt; ++j)
