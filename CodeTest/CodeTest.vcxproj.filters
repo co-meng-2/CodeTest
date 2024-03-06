@@ -355,5 +355,8 @@
     <ClCompile Include="BOJ_서강그라운드.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_환승.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
