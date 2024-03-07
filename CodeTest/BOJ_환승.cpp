@@ -14,7 +14,8 @@ using pii = std::pair<int, int>;
 // hyper 묶음으로 생각
 // 같은 hyper에 있다 -> 거리 + 1로 넣어줌.
 // [hyper][v] [v][hyper] 2개를 만들어줌.
-// 
+// visited 최적화 문제
+// dummy 추가
 
 int main()
 {
