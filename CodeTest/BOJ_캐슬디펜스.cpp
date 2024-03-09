@@ -19,6 +19,7 @@ using std::vector;
 // permutation 이용한 brute force
 // 인덱스에서 너무 해맸다.
 // 보드를 뒤집어 생각해서 궁수를 0에 두고 생각했으면 더 편했을지도?
+// 에너미를 움직이지말고 아처를 한칸씩 위로하는게 좋다!!!
 
 int dx[3] = { -1, 0, 1 }; // L U R
 int dy[3] = { 0, -1, 0 };
@@ -130,7 +131,6 @@ int main()
 			cin >> board[i][j];
 			if (board[i][j] == 1)
 				etotal++;
-				
 		}
 	}
 
