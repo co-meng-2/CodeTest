@@ -364,5 +364,8 @@
     <ClCompile Include="BOJ_게리맨더링.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_사냥꾼.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -16,9 +16,6 @@ using std::vector;
 // 최대 10 9 8 7 5 / 5 4 3 2 1 = 105
 // 그냥 brute force!
 
-
-
-
 using pii = std::pair<int, int>;
 
 bool IsConnected(int sIdx, int n, vector<vector<int>>& adjList, vector<pii>& popul, int cnt, int color)
@@ -120,6 +117,18 @@ int main()
 		} while (std::next_permutation(permu.begin(), permu.end()));
 	}
 
+	// bitmask로도 2개의 그룹으로 나눌 수 있다.
+	// vector<int> vecRed;
+	// vector<int> vecBlue;
+	// for(int i = 1; i < (1 << n) -1; ++i)
+	// {
+	// 	for(int j = 1; j <= n; ++j)
+	// 	{
+	// 		if (i & (1 << (j - 1))) vecRed.push_back(j);
+	// 		else vecBlue.push_back(j);
+	// 	}
+	// }
+
 	if (min == INF)
 		cout << -1;
 	else
@@ -132,5 +141,5 @@ int main()
 // S : 9:20
 // U : 9:21
 // T : 9:27
-// C :
-// Total :
+// C : 10:03
+// Total : 43min
