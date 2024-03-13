@@ -373,5 +373,8 @@
     <ClCompile Include="BOJ_다이어트.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_안정적인_네트워크.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

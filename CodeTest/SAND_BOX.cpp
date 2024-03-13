@@ -1,11 +1,13 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main()
 {
-	int chk[5]{-1, 1, 1, 1, 1};
-	chk[-1] = 1;
-	cout << chk[-1];
+	vector<int> a = {1,2};
+	vector<int> b;
+
+	a.data	() = b.data();
 
 	return 0;
 }
