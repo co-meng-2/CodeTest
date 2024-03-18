@@ -10,8 +10,10 @@ using std::cout;
 
 #include <algorithm>
 #include <map>
+#include <unordered_map>
 #include <queue>
-using ll = unsigned long long;
+using ui = unsigned int;
+using umii = std::unordered_map<int, int>;
 
 using namespace std;
 
@@ -21,13 +23,7 @@ using namespace std;
 // 맵으로 숫자들 저장 하고 1차이 나는 숫자들을 맵에서 Find 최대 30log10만 600?
 // break 할게 아니라 그냥 한 번 계산 때리고 memo이용하는것...
 
-struct tInfo
-{
-	ll value;
-	vector<int> idxs;
-};
-
-void dfs(vector<int>& ans, vector<int>& tmpAns, ll cur, int target, map<ll, int>& mapNum, const int& k, int& minLength, vector<bool>& visited)
+void dfs(vector<int>& ans, vector<int>& tmpAns, ui cur, int target, map<ui, int>& mapNum, const int& k, int& minLength, vector<bool>& visited)
 {
 	if (minLength < ans.size())
 		return;
@@ -46,8 +42,8 @@ void dfs(vector<int>& ans, vector<int>& tmpAns, ll cur, int target, map<ll, int>
 
 	for(int i = 0; i < k; ++i)
 	{
-		ll tmp = cur;
-		ll cmp = 1ll << i;
+		ui tmp = cur;
+		ui cmp = 1 << i;
 		if (tmp & cmp)
 			tmp -= cmp;
 		else
@@ -72,19 +68,15 @@ int main()
 	int n, k;
 	cin >> n >> k;
 
-	ll first;
+	ui first;
 	bool bfirst = true;
-	map<ll, int> mapNum;
+	umii mapNum;
 	for(int i = 1; i <= n; ++i)
 	{
 		string s;
 		cin >> s;
-		ll num = 0;
-		for(int j =0; j < k; ++j)
-		{
-			if (s[j] != '0')
-				num += 1ll << (k - 1 - j);
-		}
+		ui num = 0;
+		num = stoi(s, nullptr, 2);
 		mapNum.insert({ num, i});
 		if (bfirst)
 		{
@@ -97,9 +89,9 @@ int main()
 	cin >> T;
 
 	vector<bool> visited(n + 1, false);
-	vector <int> idxs(n + 1, -1);
+	vector <int> memo(n + 1, -1);
 
-	queue<ll> Q;
+	queue<ui> Q;
 	Q.push(first);
 	visited[1] = true;
 	while (!Q.empty())
@@ -116,19 +108,14 @@ int main()
 		// 30
 		for (int i = 0; i < k; ++i)
 		{
-			ll tmp = cur;
-			ll cmp = 1ll << i;
-			if (tmp & cmp)
-				tmp -= cmp;
-			else
-				tmp += cmp;
+			ui tmp = cur ^ (1 << i);
 
 			auto findNum = mapNum.find(tmp);
 			if (findNum != mapNum.end() && !visited[findNum->second])
 			{
 				visited[findNum->second] = true;
 				Q.push(findNum->first);
-				idxs[findNum->second] = findCur->second;
+				memo[findNum->second] = findCur->second;
 			}
 		}
 	}
@@ -140,14 +127,14 @@ int main()
 
 		// vector<int> tmpAns{ 1 };
 
-		if(idxs[target] != -1)
+		if(memo[target] != -1)
 		{
 			vector<int> ans;
 			int tmpTarget = target;
 			while (tmpTarget != -1)
 			{
 				ans.push_back(tmpTarget);
-				tmpTarget = idxs[tmpTarget];
+				tmpTarget = memo[tmpTarget];
 			}
 			for(auto it = ans.rbegin(); it != ans.rend(); ++it)
 			{
