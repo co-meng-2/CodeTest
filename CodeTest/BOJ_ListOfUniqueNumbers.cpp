@@ -24,8 +24,9 @@ int main()
 
 	vector<int> numIdxs(100001, -1);
 
-	// 
+	// 똑같은 숫자가 2번 나오는 구간의 다음 인덱스
 	int s = 0;
+	// 실제 순환 인덱스
 	int e = 0;
 
 	while (e < n)
@@ -49,7 +50,8 @@ int main()
 		}
 	}
 
-	sum += (n - s) * (n + 1 - s) / 2;
+	// 곱셈 -> long long 하나 넣어줘야 함
+	sum += (long long)(n - s) * (n + 1 - s) / 2;
 
 	cout << sum;
 
