@@ -388,5 +388,8 @@
     <ClCompile Include="BOJ_ListOfUniqueNumbers.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_돌_그룹.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
