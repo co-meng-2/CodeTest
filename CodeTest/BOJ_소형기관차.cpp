@@ -34,18 +34,50 @@ int main()
 		acc[i] = acc[i-1] + train[i];
 	}
 	cin >> len;
-	
 
-	for(int towTruck = 1; towTruck <=3; towTruck++)
+
+	// 1 or n번째 칸으로부터 i번째 칸 까지의 최대 사람 수 
+	vector<int> dp_front(n + 1);
+	vector<int> dp_back(n + 1);
+	for(int i = len; i <= n; ++i)
 	{
-		for (int trainIdx = towTruck * len; trainIdx <= n; trainIdx++)
-		{
-			int add = acc[trainIdx] - acc[trainIdx - len];
-			dp[towTruck][trainIdx] = max(dp[towTruck - 1][trainIdx - len] + add, dp[towTruck][trainIdx-1]);
-		}
+		dp_front[i] = max(dp_front[i - 1], acc[i] - acc[i - len]);
 	}
 
-	cout << dp[3][n];
+	for(int i = n-len + 1; i >= 1; --i)
+	{
+		dp_back[i] = max(dp_back[i + 1], acc[i + len - 1] - acc[i-1]);
+	}
+
+	// 10 2 7
+	int Max = -1;
+	for(int i = len + 1; i <= n - len*2 + 1; ++i)
+	{
+		int secondCur = acc[i + len -1] - acc[i - 1];
+		// 1 ~ i-1까지
+		dp_front[i - 1];
+
+		// i + len ~ n까지
+		dp_back[i + len];
+
+		Max = max(Max, dp_front[i - 1] + secondCur + dp_back[i + len]);
+	}
+
+	cout << Max;
+
+
+
+	// dp
+	//for(int towTruck = 1; towTruck <=3; towTruck++)
+	//{
+	//	for (int trainIdx = towTruck * len; trainIdx <= n; trainIdx++)
+	//	{
+	//		int add = acc[trainIdx] - acc[trainIdx - len];
+	//		dp[towTruck][trainIdx] = max(dp[towTruck - 1][trainIdx - len] + add, dp[towTruck][trainIdx-1]);
+	//	}
+	//}
+
+	//cout << dp[3][n];
 	
 
 	return 0;

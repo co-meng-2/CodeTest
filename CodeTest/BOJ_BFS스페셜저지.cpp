@@ -16,7 +16,9 @@ using namespace std;
 
 // Q에 검증하며 넣으면 되지 않을까?
 
-// 쓸 수 있는 정보
+// 풀이시간이 가장 빠른 풀이
+// bfsOrder기준으로 adjList를 정렬하고 BFS진행하며 2부터 N까지와 각 방문 정점들을 비교하는 방식
+// 실전에서 쓰긴 어려울 듯. 직관적이지 않음.
 
 
 
@@ -37,7 +39,7 @@ int main()
 	int v;
 	cin >> v;
 
-
+	// input
 	vector<vector<int>> adjList(v+1);
 	for(int i = 1; i <= v-1; ++i)
 	{
@@ -52,13 +54,16 @@ int main()
 	{
 		cin >> bfsOrder[i];
 	}
+	// end of input
 
+	// 시작 인덱스가 1이 아닐경우 71퍼 예외 테케 
 	if (bfsOrder[1] != 1)
 	{
 		cout << 0;
 		return 0;
 	}
 
+	// adjList 미리 sort
 	for(int i = 0; i < adjList.size(); ++i)
 	{
 		sort(adjList[i].begin(), adjList[i].end());
@@ -66,8 +71,10 @@ int main()
 
 	vector<bool> visited(v + 1, false);
 	queue<int> Q;
-	Q.push(bfsOrder[1]);
-	visited[bfsOrder[1]] = true;
+	Q.push(1);
+	visited[1] = true;
+
+	// bfsOrder과 비교할 시작 인덱스 
 	int cmpIdx = 2;
 
 	bool check = true;
@@ -77,6 +84,7 @@ int main()
 		int cur = Q.front();
 		Q.pop();
 
+		// 비교할 방문이 안된 정점들
 		vector<int> save;
 		for(auto it : adjList[cur])
 		{
@@ -85,13 +93,18 @@ int main()
 			save.push_back(it);
 		}
 
+		// N개 고정이라 상관 안써도 됨
 		//if(cmpIdx + save.size() > v + 1)
 		//{
 		//	check = false;
 		//	break;
 		//}
+
+		// 방문이 안된 정점 수 만큼 bfsOrder에서 빼옴
 		vector<int> tmp(bfsOrder.begin() + cmpIdx, bfsOrder.begin()+ cmpIdx + save.size());
 
+		// tmp 자리는 값으로 전달
+		// tmp sort해서 각 인덱스 값 비교
 		bool ret = cmp(tmp, save);
 		if(ret == false)
 		{
@@ -99,11 +112,13 @@ int main()
 			break;
 		}
 
+		// 위에서 안 걸려졌다면 sort안된 tmp를 Q에 넣어줌.
 		for(auto it : tmp)
 		{
 			Q.push(it);
 		}
-		
+
+		// 비교할 시작 인덱스를 늘려줌.
 		cmpIdx += tmp.size();
 	}
 

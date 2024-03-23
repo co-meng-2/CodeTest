@@ -397,5 +397,11 @@
     <ClCompile Include="BOJ_BFS스페셜저지.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_선물전달.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_스터디_시간_정하기1.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
