@@ -21,12 +21,13 @@ ll mod = 1'000'000'000;
 int main()
 {
 	fastio;
-
+	
 	int n;
 	cin >> n;
-
 	dp[2] = 1;
 	dp[3] = 2;
+
+	1;
 
 	for(int i = 4; i <=n; ++i)
 	{
@@ -37,7 +38,6 @@ int main()
 
 	return 0;
 }
-
 
 // S : 7:42
 // U : 7:42

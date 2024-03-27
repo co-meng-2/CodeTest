@@ -13,12 +13,14 @@ using std::cout;
 #include <string>
 using namespace std;
 
+using ll = long long;
+using pii = pair<int, int>;
+
 
 
 int main()
 {
 	fastio;
-
 	return 0;
 }
 
