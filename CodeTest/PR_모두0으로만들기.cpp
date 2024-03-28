@@ -2,6 +2,7 @@
 #include <vector>
 #include <queue>
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 using ll = long long;
@@ -81,4 +82,56 @@ long long solution(vector<int> a, vector<vector<int>> edges) {
 		return ans;
 	else
 		return -1;
+}
+
+void dfs(int cur, int p, vector<ll>& w, vector<vector<int>>& adjList, vector<bool>& visited, ll& ans)
+{
+	// 자신의 값 갱신
+	for (auto it : adjList[cur])
+	{
+		if (visited[it]) continue;
+		visited[it] = true;
+		dfs(it, cur, w, adjList, visited, ans);
+	}
+	// 부모에 자신을 더해준다.
+	if (p == -1) return;
+	w[p] += w[cur];
+	ans += abs(w[cur]);
+}
+
+long long solution2(vector<int> a, vector<vector<int>> edges) {
+
+	// dfs 한 번 해서 트리 구조 파악
+	//
+	vector<long long> w(a.begin(), a.end());
+	int vcnt = w.size();
+	vector<int> parents(vcnt, -1);
+
+	vector<vector<int>> adjList(vcnt);
+	for (auto edge : edges)
+	{
+		int s = edge[0];
+		int e = edge[1];
+		adjList[s].push_back(e);
+		adjList[e].push_back(s);
+	}
+
+	ll ans = 0;
+	vector<bool> visited(vcnt, false);
+	visited[0] = true;
+	dfs(0, -1, w, adjList, visited, ans);
+
+	if (w[0] == 0)
+		return ans;
+	else
+		return 0;
+}
+
+int main()
+{
+
+	vector<int> a{0,1,0};
+	vector < vector<int>> edges{{0,1},{1,2}};
+	cout << solution2(a, edges);
+	return 0;
 }
