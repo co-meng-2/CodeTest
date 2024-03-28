@@ -2,12 +2,21 @@
 #include <vector>
 using namespace std;
 
+class AAA
+{
+public:
+	int a = 0;
+
+	void func()
+	{
+		a++;
+	}
+};
+
 int main()
 {
-	vector<int> a = {1,2};
-	vector<int> b;
-
-	a.data	() = b.data();
+	AAA a;
+	a.func();
 
 	return 0;
 }

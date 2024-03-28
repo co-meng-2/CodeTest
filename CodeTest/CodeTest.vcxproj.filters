@@ -415,5 +415,8 @@
     <ClCompile Include="PR_공_이동_시뮬레이션.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="PR_모두0으로만들기.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
