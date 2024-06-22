@@ -124,14 +124,5 @@ long long solution2(vector<int> a, vector<vector<int>> edges) {
 	if (w[0] == 0)
 		return ans;
 	else
-		return 0;
-}
-
-int main()
-{
-
-	vector<int> a{0,1,0};
-	vector < vector<int>> edges{{0,1},{1,2}};
-	cout << solution2(a, edges);
-	return 0;
+		return -1;
 }
