@@ -43,7 +43,7 @@ void Rotate(int z)
 	copy(&newboard[z][0][0], &newboard[z][0][0] + 5 * 5, &tmpboard[0][0]);
 	for (int r = 0; r < 5; ++r)
 		for (int c = 0; c < 5; ++c)
-			newboard[z][r][c] = tmpboard[c][4-r];
+			newboard[z][r][c] = tmpboard[c][4 - r];
 }
 
 bool OOB(int z, int y, int x)
@@ -52,6 +52,21 @@ bool OOB(int z, int y, int x)
 }
 
 int ans = INF;
+void dfs(int curZ, vector<int>& rotate, vector<int>& orders)
+{
+	if (curZ == 5)
+	{
+
+	}
+
+	for (int rotateCnt = 0; rotateCnt < 4; ++rotateCnt)
+	{
+		rotate.push_back(rotateCnt);
+		dfs(curZ + 1, rotate, orders);
+		rotate.pop_back();
+	}
+
+}
 
 int main()
 {
@@ -62,14 +77,14 @@ int main()
 			for (int k = 0; k < 5; ++k)
 				cin >> board[i][j][k];
 
-	vector<int> permu = {0,1,2,3,4 };
+	vector<int> permu = { 0,1,2,3,4 };
 
 	do
 	{
 		for (int i = 0; i < permu.size(); ++i)
 			copy(&board[permu[i]][0][0], &board[permu[i]][0][0] + 5 * 5, &newboard[i][0][0]);
 
-		for(int a = 0; a < 4; ++a)
+		for (int a = 0; a < 4; ++a)
 		{
 			Rotate(0);
 			for (int b = 0; b < 4; ++b)
@@ -88,7 +103,7 @@ int main()
 							if (newboard[0][0][0] == 0 || newboard[4][4][4] == 0) continue;
 
 							queue<tiii> Q;
-							vector<vector<vector<bool>>> visited(5, vector<vector<bool>>(5, vector<bool>(5)));
+							bool visited[5][5][5]{};
 							Q.push({ 0,0,0 });
 							visited[0][0][0] = true;
 
@@ -96,7 +111,6 @@ int main()
 							while (!Q.empty())
 							{
 								int qsz = Q.size();
-								bool out = false;
 								dist++;
 								while (qsz--)
 								{
@@ -109,21 +123,19 @@ int main()
 										int ny = cy + dy[dir];
 										int nx = cx + dx[dir];
 
-										if (OOB(nz, ny, nx) || board[nz][ny][nx] == 0 || visited[nz][ny][nx] ) continue;
+										if (OOB(nz, ny, nx) || newboard[nz][ny][nx] == 0 || visited[nz][ny][nx]) continue;
 										visited[nz][ny][nx] = true;
 
 										if (nz == 4 && ny == 4 && nx == 4)
 										{
 											ans = min(ans, dist);
-											out = true;
+											Q = {};
+											qsz = 0;
 											break;
 										}
-											
 
 										Q.push({ nz, ny, nx });
 									}
-									if (out)
-										break;
 								}
 							}
 						}
