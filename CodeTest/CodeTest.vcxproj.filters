@@ -632,6 +632,9 @@
     <ClCompile Include="BOJ_합리적인 이동경로.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_하늘에서 별똥별이 빗발친다.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
