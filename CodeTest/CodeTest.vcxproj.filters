@@ -588,13 +588,16 @@
     <ClCompile Include="BOJ_숨바꼭질_ALL.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_하늘에서 별똥별이 빗발친다.cpp">
+    <ClCompile Include="PS_TEMPLATE.cpp">
       <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_하늘에서 별똥별이 빗발친다.cpp">
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_카카오머니.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="PS_TEMPLATE.cpp">
+    <ClCompile Include="BOJ_크게만들기.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>

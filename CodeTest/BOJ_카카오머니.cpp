@@ -32,14 +32,7 @@ const int INF = 0x3f3f3f3f;
 
 ll GCD(ll a, ll b)
 {
-	// prevM -1인 경우 처리
-	if (a < 0)
-		return b;
-	ll ret = a % b;
-	if (ret == 0)
-		return b;
-	else
-		return GCD(b, ret);
+	return b ? GCD(b, a % b) : a;
 }
 
 int main()
@@ -50,7 +43,7 @@ int main()
 	cin >> n;
 
 	ll prevD = 0;
-	ll prevM = -1;
+	ll prevM = 0;
 	ll mx = 0;
 
 	for(int i = 0; i < n; ++i)
@@ -75,7 +68,7 @@ int main()
 	}
 
 	// 입금만 진행된 경우 아무숫자
-	if (prevM == -1)
+	if (prevM == 0)
 		cout << 1;
 	// 잔액의 최댓값이 최대충전금액보다 작은 경우 유효하다
 	else if (prevM > mx)
