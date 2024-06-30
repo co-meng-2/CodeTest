@@ -597,16 +597,19 @@
     <ClCompile Include="BOJ_카카오머니.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_마법사 상어와 토네이도.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_크게만들기.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_불켜기.cpp">
+    <ClCompile Include="BOJ_합.cpp">
       <Filter>progress</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_합.cpp">
+    <ClCompile Include="BOJ_불켜기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_마법사 상어와 토네이도.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_최대공약수 하나 뺴기.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
