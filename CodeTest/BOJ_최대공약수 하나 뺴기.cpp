@@ -50,7 +50,7 @@ int main()
 	int mxIdx = -1;
 	for(int sub = 1; sub <= n; ++sub)
 	{
-		int curGCD = gcd(dp_front[sub - 1], dp_back[n - sub - 1]);
+		int curGCD = gcd(dp_front[sub - 1], dp_back[n - sub]);
 		if( nums[sub] % curGCD != 0 && curGCD > mx)
 		{
 			mx = curGCD;

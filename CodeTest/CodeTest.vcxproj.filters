@@ -600,9 +600,6 @@
     <ClCompile Include="BOJ_크게만들기.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_합.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_불켜기.cpp">
       <Filter>success</Filter>
     </ClCompile>
@@ -610,6 +607,12 @@
       <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_최대공약수 하나 뺴기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_합.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_통나무자르기.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
