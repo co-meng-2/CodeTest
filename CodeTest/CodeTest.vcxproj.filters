@@ -606,13 +606,25 @@
     <ClCompile Include="BOJ_마법사 상어와 토네이도.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_최대공약수 하나 뺴기.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_합.cpp">
       <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_통나무자르기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_최대공약수 하나 뺴기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_교환.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_3초정렬.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_백양로 브레이크.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_드래곤커브.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>

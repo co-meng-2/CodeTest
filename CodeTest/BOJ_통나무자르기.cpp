@@ -37,30 +37,25 @@ vector<int> locs;
 bool check(int mid, int cnt = 0, int s = 0 ,int sIdx = 0)
 {
 	int tmp = s;
-	if (cnt < C)
-	{
-		for (int i = sIdx; i < locs.size(); ++i)
-		{
-			if (locs[i] - s <= mid)  // 일단 보류
-			{
-				tmp = locs[i];
-			}
-			else // 확정
-			{
-				s = tmp;
-				cnt++;
-				if (cnt == C)
-				{
-					if (L - s <= mid)
-						return true;
-					return false;
-				}
 
-				if (locs[i] - s <= mid)  // 일단 보류
-				{
-					tmp = locs[i];
-				}
-			}
+	for (int i = sIdx; i < locs.size(); ++i)
+	{
+		if (locs[i] - s > mid && s != tmp) // 확정
+		{
+			s = tmp;
+			cnt++;
+		}
+
+		if (locs[i] - s <= mid)  // 일단 보류
+		{
+			tmp = locs[i];
+		}
+
+		if (cnt == C)
+		{
+			if (L - s <= mid)
+				return true;
+			return false;
 		}
 	}
 

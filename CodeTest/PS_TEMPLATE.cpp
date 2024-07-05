@@ -12,6 +12,7 @@ using std::cout;
 #include <unordered_set>
 #include <set>
 #include <string>
+#include <cmath>
 #include <memory.h>
 using namespace std;
 
