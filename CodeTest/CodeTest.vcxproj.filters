@@ -615,16 +615,19 @@
     <ClCompile Include="BOJ_최대공약수 하나 뺴기.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_교환.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_3초정렬.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_백양로 브레이크.cpp">
-      <Filter>progress</Filter>
+    <ClCompile Include="BOJ_교환.cpp">
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_드래곤커브.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_백양로 브레이크.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_나머지 합.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
