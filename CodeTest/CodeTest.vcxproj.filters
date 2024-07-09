@@ -636,6 +636,9 @@
     <ClCompile Include="BOJ_공주님의 정원.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ__줄 세우기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
