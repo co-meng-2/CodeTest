@@ -627,25 +627,31 @@
     <ClCompile Include="BOJ_백양로 브레이크.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_나머지 합.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_팰린드롬 공장.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_공주님의 정원.cpp">
+    <ClCompile Include="BOJ_수영장 만들기.cpp">
       <Filter>progress</Filter>
     </ClCompile>
     <ClCompile Include="BOJ__줄 세우기.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_우주신과의 교감.cpp">
-      <Filter>progress</Filter>
+    <ClCompile Include="BOJ_공주님의 정원.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_나머지 합.cpp">
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_등수 찾기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_우주신과의 교감.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_팰린드롬 공장.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_뒤집기.cpp">
       <Filter>progress</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_수영장 만들기.cpp">
+    <ClCompile Include="BOJ_구간 나누기.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
