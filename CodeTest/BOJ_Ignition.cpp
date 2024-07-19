@@ -38,7 +38,7 @@ int main()
 		int s, d, w;
 		cin >> s >> d >> w;
 		adjList[s].push_back({ w,d });
-		adjList[d].push_back({ w, s});
+		adjList[d].push_back({ w,s });
 	}
 
 	float mnTime = 1000000.f;
@@ -81,12 +81,9 @@ int main()
 	cout << fixed;
 	cout.precision(1);
 	cout << mnTime;
-	
-	
 
 	return 0;
 }
-
 
 // S : 210
 // U : 211

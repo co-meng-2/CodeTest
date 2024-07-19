@@ -627,9 +627,6 @@
     <ClCompile Include="BOJ_백양로 브레이크.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_수영장 만들기.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ__줄 세우기.cpp">
       <Filter>success</Filter>
     </ClCompile>
@@ -648,23 +645,29 @@
     <ClCompile Include="BOJ_팰린드롬 공장.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_뒤집기.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_구간 나누기.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_달빛 여우.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_PPAP.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_우체국.cpp">
       <Filter>progress</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_Ignition.cpp">
       <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_구간 나누기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_달빛 여우.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_뒤집기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_수영장 만들기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_우체국.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_Puyo Puyo.cpp">
+      <Filter>success</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
