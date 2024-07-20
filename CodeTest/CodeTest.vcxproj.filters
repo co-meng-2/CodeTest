@@ -667,7 +667,13 @@
       <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_Puyo Puyo.cpp">
-      <Filter>success</Filter>
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_물통.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_트리.cpp">
+      <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
