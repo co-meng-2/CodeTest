@@ -93,9 +93,7 @@ int main()
 			{
 				if(board[i][j] != '.')
 				{
-					char tmp = board[i][j];
-					board[i][j] = '.';
-					board[i][s] = tmp;
+					swap(board[i][j], board[i][s]);
 					s++;
 				}
 			}

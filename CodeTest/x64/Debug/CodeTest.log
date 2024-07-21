@@ -1,2 +1,3 @@
-﻿  BOJ_트리.cpp
+﻿  BOJ_우주탐사선.cpp
+D:\C++\CodeTest\CodeTest\BOJ_우주탐사선.cpp(68,1): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
   CodeTest.vcxproj -> D:\C++\CodeTest\x64\Debug\CodeTest.exe

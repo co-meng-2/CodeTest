@@ -675,6 +675,9 @@
     <ClCompile Include="BOJ_트리.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_우주탐사선.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
