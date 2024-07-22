@@ -47,7 +47,7 @@ int main()
 		auto [cur, cbit, cw] = Q.front();
 		Q.pop();
 
-		for(int i = 0 ;i < 10; ++i)
+		for(int i = 0 ;i < n; ++i)
 		{
 			int nbit = cbit | (1 << i);
 			int nw = cw + adjMat[cur][i];

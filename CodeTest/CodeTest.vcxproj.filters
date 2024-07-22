@@ -678,6 +678,9 @@
     <ClCompile Include="BOJ_우주탐사선.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_버스노선.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
