@@ -645,12 +645,6 @@
     <ClCompile Include="BOJ_팰린드롬 공장.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_PPAP.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_Ignition.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_구간 나누기.cpp">
       <Filter>success</Filter>
     </ClCompile>
@@ -666,34 +660,100 @@
     <ClCompile Include="BOJ_우체국.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_Puyo Puyo.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_물통.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_트리.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_우주탐사선.cpp">
-      <Filter>progress</Filter>
+    <ClCompile Include="BOJ_Ignition.cpp">
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_버스노선.cpp">
-      <Filter>progress</Filter>
+    <ClCompile Include="BOJ_PPAP.cpp">
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_서울에서 경산까지.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_최종순위.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_사다리 조작.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_작업.cpp">
-      <Filter>progress</Filter>
+    <ClCompile Include="BOJ_Puyo Puyo.cpp">
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_고층빌딩_LATEST.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_물통.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_버스노선.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_사다리 조작.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_서울에서 경산까지.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_우주탐사선.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_작업.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_최종순위.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_가장 큰 정사각형.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_뉴스 전하기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_다리 만들기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_램프.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_방 번호.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_선분교차2.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_세부.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_소문난 칠공주.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_수들의 합 4.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_여왕벌.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_운동.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_이분그래프.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_이중 우선 순위 큐.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_전생했더니 슬라임.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_주유소.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_치즈.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_피리 부는 사나이.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_회의준비.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_등산.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_카드게임.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,19 +1,6 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #define fastio std::ios_base::sync_with_stdio(false);\
 cin.tie(NULL)
-using std::cin;
-using std::cout;
-
-#include <vector>
-#include <queue>
-#include <map>
-#include <algorithm>
-#include <unordered_map>
-#include <unordered_set>
-#include <set>
-#include <string>
-#include <cmath>
-#include <memory.h>
 using namespace std;
 
 using ll = long long;
