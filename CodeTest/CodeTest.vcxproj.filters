@@ -756,6 +756,45 @@
     <ClCompile Include="BOJ_카드게임.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_사과나무.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_할로윈의 양아치.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_평범한 배낭2.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_거짓말.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_미친 아두이노.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_세 수의 합.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_중량제한.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_욕심쟁이 판다.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_불!.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_LCA.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_중앙값 구하기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_불우이웃돕기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_인구 이동.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">

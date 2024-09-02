@@ -29,7 +29,7 @@ void dfs(int s, int e, bool turn = true)
 	if (dp[!turn][s + 1][e] == INF) dfs(s + 1, e, !turn);
 	if (dp[!turn][s][e-1] == INF) dfs(s, e-1, !turn);
 
-	dp[turn][s][e] = max(nums[s] + acc[e] - acc[s] - dp[!turn][s + 1][e], nums[e] + acc[e - 1] - acc[s - 1] - dp[!turn][s][e - 1]);
+	dp[turn][s][e] = max(acc[e] - acc[s-1] - dp[!turn][s + 1][e], acc[e] - acc[s-1] - dp[!turn][s][e - 1]);
 }
 
 int main()
