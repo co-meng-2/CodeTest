@@ -1,3 +1,2 @@
-﻿  BOJ_인구 이동.cpp
-D:\C++\CodeTest\CodeTest\BOJ_인구 이동.cpp(71,13): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  BOJ_팰린드롬분할.cpp
   CodeTest.vcxproj -> D:\C++\CodeTest\x64\Debug\CodeTest.exe

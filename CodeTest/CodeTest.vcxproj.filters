@@ -750,49 +750,100 @@
     <ClCompile Include="BOJ_회의준비.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_등산.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_카드게임.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_사과나무.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_할로윈의 양아치.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_평범한 배낭2.cpp">
-      <Filter>progress</Filter>
+    <ClCompile Include="BOJ_ 타임머신.cpp">
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_거짓말.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_미친 아두이노.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_세 수의 합.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_중량제한.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_욕심쟁이 판다.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_불!.cpp">
-      <Filter>progress</Filter>
+    <ClCompile Include="BOJ_Dance Dance Revolution.cpp">
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_LCA.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_중앙값 구하기.cpp">
-      <Filter>progress</Filter>
+    <ClCompile Include="BOJ_RGB거리.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_가장높은탑쌓기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_거짓말.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_공항_LATEST.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_과제.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_등산.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_면접보는 승범이네.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_미친 아두이노.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_벽부수고이동하기4.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_불!.cpp">
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_불우이웃돕기.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_사과나무.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_사이클 게임.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_세 수의 합.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_수 나누기 게임.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_욕심쟁이 판다.cpp">
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_인구 이동.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_줄 세우기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_줄서기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_중량제한.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_중앙값 구하기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_카드게임.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_컨베이어벨트위의로봇.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_키순서.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_트리와 쿼리.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_평범한 배낭2.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_구간자르기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_팰린드롬분할.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
