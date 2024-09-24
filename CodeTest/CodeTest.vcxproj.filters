@@ -852,6 +852,9 @@
     <ClCompile Include="BOJ_1의 갯수 세기.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_괄호 추가하기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
