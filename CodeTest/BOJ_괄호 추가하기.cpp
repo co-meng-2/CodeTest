@@ -59,6 +59,7 @@ void dfs(int cur, int sum)
 
 int main()
 {
+
 	fastio;
 	cin >> n;
 	cin >> s;
@@ -75,7 +76,6 @@ int main()
 
 	return 0;
 }
-
 
 // S : 12 07
 // U : 12 08
