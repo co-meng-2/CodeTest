@@ -840,9 +840,6 @@
     <ClCompile Include="BOJ_평범한 배낭2.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_사회망 서비스.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_1의 갯수 세기.cpp">
       <Filter>success</Filter>
     </ClCompile>
@@ -858,11 +855,17 @@
     <ClCompile Include="BOJ_팰린드롬분할.cpp">
       <Filter>success</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_Z.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_사회망 서비스.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
     <ClCompile Include="BOJ_양 구출 작전.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_오등 큰 수.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
