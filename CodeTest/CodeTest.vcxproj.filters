@@ -867,8 +867,11 @@
     <ClCompile Include="BOJ_오등 큰 수.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_서울 지하철 2호선.cpp">
+    <ClCompile Include="BOJ_미로만들기.cpp">
       <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_서울 지하철 2호선.cpp">
+      <Filter>success</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

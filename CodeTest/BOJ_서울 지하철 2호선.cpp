@@ -107,5 +107,5 @@ int main()
 // S : 2 15
 // U : 2 20
 // T : 2 25
-// C :
-// Total :
+// C : 2 38
+// Total : 23min
