@@ -873,6 +873,9 @@
     <ClCompile Include="BOJ_서울 지하철 2호선.cpp">
       <Filter>success</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_플로이드2.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
