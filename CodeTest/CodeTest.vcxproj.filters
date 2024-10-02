@@ -876,6 +876,9 @@
     <ClCompile Include="BOJ_플로이드2.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_맥주 마시면서 걸어가기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
