@@ -885,6 +885,9 @@
     <ClCompile Include="BOJ_너 봄에는 캡사이신이 맛있단다.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_꼬인 전깃줄.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
