@@ -894,7 +894,10 @@
     <ClCompile Include="BOJ_전시장.cpp">
       <Filter>progress</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_벽 부수고 이동하기.cpp">
+    <ClCompile Include="BOJ_벽 부수고 이동하기2.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_마법사 상어와 파이어볼.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
