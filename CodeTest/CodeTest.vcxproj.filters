@@ -915,6 +915,9 @@
     <ClCompile Include="BOJ_모래성.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_민준이와 마산 그리고 건우.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
