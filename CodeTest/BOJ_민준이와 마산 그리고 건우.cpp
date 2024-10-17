@@ -5,6 +5,7 @@ using namespace std;
 
 using pii = pair<int, int>;
 
+const int INF = 1e9;
 int v, e, p;
 vector<pii> adjList[5001];
 int table[5001]{};

@@ -918,6 +918,12 @@
     <ClCompile Include="BOJ_민준이와 마산 그리고 건우.cpp">
       <Filter>progress</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ_개구리점프.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_행성 연결.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyDebug.h">
