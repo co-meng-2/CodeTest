@@ -1,150 +1,72 @@
-#include <iostream>
+#include <bits/stdc++.h>
+#include <functional>
 
-#include <queue>
-
-#include <algorithm>
-
-#include <vector>
 using namespace std;
 
-struct tEdge
-{
-	int d;
-	int w;
+string ltrim(const string&);
+string rtrim(const string&);
 
-	bool operator>(const tEdge& _rhs) const
-	{
-		return w < _rhs.w;
-	}
-};
+// ofstream ë¶€ë¶„ ì§€ìš¸ ê²ƒ!
+// ltrim rtrimì€ ë³µì‚¬ ã„´ã„´
 
+using pii = pair<int, int>;
+// PQ?
+int Moves(vector<int> arr) {
+    // s ì•ì—ì„œ í™€ìˆ˜, d ë’¤ì—ì„œ ì§ìˆ˜
+    int s = 0;
+    int d = arr.size() - 1;
 
-vector<int> daj(int start, vector<vector<tEdge>> adjList)
-{
-	const int INF = 1000000000;
-	int vCnt = adjList.size();
-	vector<int> table(vCnt, INF);
-	vector<bool> visited(vCnt, false);
+    while (s < arr.size() && arr[s] % 2)
+        ++s;
 
-	priority_queue<tEdge, vector<tEdge>, greater<tEdge>> PQ;
-	PQ.push({start, 0});
+    while (d >= 0 && arr[d] % 2 == 0)
+        --d;
 
-	while(!PQ.empty())
-	{
-		auto top = PQ.top();
-		PQ.pop();
+    int ans = 0;
+    while (s < d)
+    {
+        ++ans;
+        ++s;
+        while (s < arr.size() && arr[s] % 2)
+            ++s;
+        --d;
+        while (d >= 0 && arr[d] % 2 == 0)
+            --d;
+    }
 
-		if (visited[top.d]) continue;
-		visited[top.d] = true;
-
-		for(auto adj : adjList[top.d])
-		{
-			if (table[adj.d] > top.w + adj.w)
-			{
-				table[adj.d] = top.w + adj.w;
-				PQ.push({ adj.d, table[adj.d] });
-			}
-		}
-	}
-
-	return table;
-}
-
-const int vCnt = 1000;
-vector<int> p(vCnt, -1);
-int Find(int n)
-{
-	if (p[n] < 0) return n;
-	return p[n] = Find(p[n]);
-}
-
-bool Union(int parent, int child)
-{
-	parent = p[parent];
-	child = p[child];
-
-	if (parent == child) return false;
-
-	p[parent] += p[child];
-	p[child] = parent;
-}
-
-struct tEXEdge
-{
-	int s;
-	int d;
-	int w;
-
-	bool operator<(const tEXEdge& _rhs) const
-	{
-		return w < _rhs.w;
-	}
-};
-
-int Cruscal(vector<tEXEdge> edges)
-{
-	int ans = 0;
-	sort(edges.begin(), edges.end());
-
-	for(auto edge : edges)
-	{
-		if(Union(edge.s ,edge.d))
-		{
-			ans += edge.w;
-		}
-	}
-
-	return ans;
-}
-
-int Prim(int s, vector<vector<tEdge>> adjList)
-{
-	int ans = 0;
-
-	vector<bool> visited(adjList.size() + 1, false);
-
-	priority_queue<tEdge, vector<tEdge>, greater<tEdge>> PQ;
-	for (auto edge : adjList[s])
-	{
-		PQ.push(edge);
-	}
-	visited[s] = true;
-
-	int sumW = 0;
-	while(!PQ.empty())
-	{
-		auto top = PQ.top();
-		PQ.pop();
-
-		if (visited[top.d]) continue;
-		visited[top.d] = true;
-		sumW += top.w;
-
-		for(auto edge : adjList[top.d])
-		{
-			PQ.push(edge);
-		}
-	}
-	return sumW;
+    return ans;
 }
 
 int main()
 {
-	int V, E, K;
-	cin >> V >> E >> K;
+    Moves({ 5,
+8,
+5,
+11,
+4,
+6 });
+}
 
-	vector<vector<tEdge>> adjList(V+1);
 
-	// ±×·¡ÇÁ¸¦ ÀÎÁ¢Çà·Ä·Î ¸¸µé±â
-	for (int i = 0; i < E; ++i)
-	{
-		int from, to, w;
-		cin >> from >> to >> w;
-		adjList[from].push_back({to, w });
-	}
 
-	int ans = Prim(K, adjList);
-	// vector<int> ans = daj(K, adjList);
+string ltrim(const string& str) {
+    string s(str);
 
-	return 0;
+    s.erase(
+        s.begin(),
+        find_if(s.begin(), s.end(), [](int ch) { return !isspace(ch); })
+    );
+
+    return s;
+}
+
+string rtrim(const string& str) {
+    string s(str);
+
+    s.erase(
+        find_if(s.rbegin(), s.rend(), [](int ch) { return !isspace(ch); }).base(),
+        s.end()
+    );
+
+    return s;
 }

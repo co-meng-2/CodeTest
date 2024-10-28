@@ -582,9 +582,6 @@
     <ClCompile Include="SAND_BOX.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
-      <Filter>success</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_숨바꼭질_ALL.cpp">
       <Filter>success</Filter>
     </ClCompile>
@@ -934,6 +931,12 @@
       <Filter>progress</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_모양 만들기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_가르침.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
