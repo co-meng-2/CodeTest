@@ -864,79 +864,82 @@
     <ClCompile Include="BOJ_오등 큰 수.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_미로만들기.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_서울 지하철 2호선.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ_플로이드2.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_맥주 마시면서 걸어가기.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_거울설치하기.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_너 봄에는 캡사이신이 맛있단다.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_꼬인 전깃줄.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_택배.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_전시장.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_벽 부수고 이동하기2.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_마법사 상어와 파이어볼.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_종이조각.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_환상의 짝꿍.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_태상이의 훈련소 생활.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_뮤탈리스크.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_모래성.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_민준이와 마산 그리고 건우.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_개구리점프.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_행성 연결.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_5.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_회전 초밥.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_기업투자.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ_모양 만들기.cpp">
-      <Filter>progress</Filter>
-    </ClCompile>
-    <ClCompile Include="Test.cpp">
-      <Filter>progress</Filter>
+      <Filter>success</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_가르침.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_개구리점프.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_거울설치하기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_기업투자.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_꼬인 전깃줄.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_너 봄에는 캡사이신이 맛있단다.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_마법사 상어와 파이어볼.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_맥주 마시면서 걸어가기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_모래성.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_모양 만들기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_뮤탈리스크.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_미로만들기.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_민준이와 마산 그리고 건우.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_벽 부수고 이동하기2.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_전시장.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_종이조각.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_태상이의 훈련소 생활.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_택배.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_플로이드2.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_행성 연결.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_환상의 짝꿍.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_회전 초밥.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>success</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ_성곽.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
