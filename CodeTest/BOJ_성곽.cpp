@@ -18,7 +18,6 @@ int bits[4] = { 1,2,4,8 };
 
 int board[50][50];
 int nboard[50][50];
-bool visited[50][50];
 int r, c;
 int mark = -1;
 
@@ -36,6 +35,7 @@ bool OOB(int y, int x)
 int main()
 {
 	fastio;
+	memset(nboard, -1, sizeof(nboard));
 	cin >> c >> r;
 
 	for(int i = 0; i < r; ++i)
@@ -52,8 +52,7 @@ int main()
 	{
 		for (int j = 0; j < c; ++j)
 		{
-			if (visited[i][j]) continue;
-			visited[i][j] = true;
+			if (nboard[i][j] >= 0) continue;
 			++mark;
 			nboard[i][j] = mark;
 			tInfo info;
@@ -79,9 +78,8 @@ int main()
 					}
 					int ny = cy + dy[dir];
 					int nx = cx + dx[dir];
-					if (visited[ny][nx]) continue;
+					if (nboard[ny][nx] >= 0) continue;
 					Q.push({ ny, nx });
-					visited[ny][nx] = true;
 					nboard[ny][nx] = mark;
 					++info.space;
 				}
