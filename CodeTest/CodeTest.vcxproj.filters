@@ -936,9 +936,6 @@
     <ClCompile Include="BOJ_회전 초밥.cpp">
       <Filter>success</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
-      <Filter>success</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ_성곽.cpp">
       <Filter>progress</Filter>
     </ClCompile>
@@ -946,6 +943,12 @@
       <Filter>progress</Filter>
     </ClCompile>
     <ClCompile Include="BOJ_팰린드롬만들기.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>progress</Filter>
+    </ClCompile>
+    <ClCompile Include="PRGMS_블록 이동하기.cpp">
       <Filter>progress</Filter>
     </ClCompile>
   </ItemGroup>
