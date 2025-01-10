@@ -55,7 +55,15 @@ int main()
 			q.push(i);
 		}
 	}
+	
+	while(!q.empty())
+	{
+		int cur = q.front();
+		q.pop();
 
+		
+	}
+	
 	int depth = 0;
 	while(!q.empty())
 	{
@@ -78,6 +86,9 @@ int main()
 
 	cout << depth;
 
+	set<int> a;
+	sort()
+	
 	return 0;
 }
 
