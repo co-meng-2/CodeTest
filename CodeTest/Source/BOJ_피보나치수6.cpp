@@ -34,13 +34,13 @@ ll Go(ll Cur)
 	if(Cur % 2)
 	{
 		Memo[Cur] = (Go(Cur / 2 + 1) * Go(Cur / 2 + 1) % Mod + Go(Cur / 2) * Go(Cur / 2) % Mod) % Mod; 
-		return Memo[Cur];
 	}
 	else
 	{
 		Memo[Cur] = (Go(Cur / 2) * Go(Cur / 2 + 1) % Mod + Go(Cur / 2 - 1) * Go(Cur / 2) % Mod) % Mod; 
-		return Memo[Cur];
 	}
+
+	return Memo[Cur];
 }
 
 
